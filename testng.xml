@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BHAssignment">
+    <listeners>
+        <listener class-name="listeners.MyTestListener"></listener>
+    </listeners>
+
+    <test name="E2EUITests">
+        <classes>
+            <class name="testcases.search.SearchFeatureTests" />
+        </classes>
+    </test>
+
+</suite>
