@@ -20,7 +20,7 @@ public class SearchFeatureTests extends BaseTest {
         landingPage = new LandingPage(driver);
     }
 
-    @Test
+    @Test(priority = 0)
     public void verifySearchFunctionality() throws InterruptedException {
 
         landingPage.acceptAllCookies().clickOnSearchIcon();
@@ -33,7 +33,7 @@ public class SearchFeatureTests extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 1)
     public void verifySearchCentersFunctionality() throws InterruptedException {
         findACenterPage = landingPage.acceptAllCookies().clickFindACenterBtn();
         Assert.assertTrue(driver.getCurrentUrl().contains("/child-care-locator"));
